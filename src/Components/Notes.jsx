@@ -142,7 +142,7 @@ export function Notes() {
                 {ele.title}
               </Textarea>
             )}
-            {editId === null && <Text>{ele.title}</Text>}
+            {editId !== ele.id && <Text>{ele.title}</Text>}
             <Flex mt="5px" w="100%" gap="2px" justifyContent="space-between">
               <Button
                 onClick={() => handleEdit(ele.id)}
